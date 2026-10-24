@@ -21,3 +21,4 @@ class SystemMonitor:
             battery=self.battery_monitor.get_battery(),
             network=(getattr(self.network_monitor, "get_network", lambda: {})() or {}),
         )
+    
