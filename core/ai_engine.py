@@ -1,8 +1,9 @@
-# core/ai_engine.py
+from core.monitor.system_monitor import SystemMonitor
+
 
 class AIEngine:
     def __init__(self):
-        pass
+        self.monitor = SystemMonitor()
 
     def get_snapshot(self):
-        return {}
+        return self.monitor.get_snapshot()
